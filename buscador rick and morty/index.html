@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stiles.css">
+    <title>buscador Rick y Morty</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxQzkWbQJAaOA82dc8IqFihvtebmhxZPSt5A&usqp=CAU">
+</head>
+<body>
+    <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>The Rick and Morty API</title>
+          <link rel="stylesheet" href="style.css" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="main.js"></script>
+        </head>
+        <body>
+          <header>
+            <div class="logo">
+              <img
+                class="img-responsive disableRightClick"
+                alt="rick and morty logo"
+                style="display: inline-block"
+                src="https://www.seekpng.com/png/full/112-1129023_no-account-no-worries-rick-and-morty-logo.png"
+              />
+            </div>
+          </header>
+          <content>
+            <div>
+              <h1>Rick and Morty Characters</h1>
+              <div class="searchContainer">
+                <p>Filter by</p>
+                <input id="characterName" />
+              </div>
+            </div>
+            <ul id="cardList"></ul>
+            <div class="pagination">
+              <button class="prevBtn pageBtn">Prev</button>
+              <div id="pages">
+                <a id="firstPageNumber" class="pageBtn"></a>
+                <a id="prevPageNumber" class="pageBtn"></a>
+                <div id="currentPageNumber"></div>
+                <a id="nextPageNumber" class="pageBtn"></a>
+                <a id="lastPageNumber" class="pageBtn lastPageNumber-block"></a>
+              </div>
+              <button class="nextBtn pageBtn">Next</button>
+            </div>
+          </content>
+        </body>
+      </html>
+</body>
+<script src="./search.js"></script>
+</html>
